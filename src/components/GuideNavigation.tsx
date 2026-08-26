@@ -7,11 +7,11 @@ const links = [
   ["Sua estadia", "estadia"],
   ["A casa", "a-casa"],
   ["Experiência", "experiencia"],
-  ["Como chegar", "como-chegar"],
+  ["Galeria", "galeria"],
   ["Guia da casa", "guia"],
-  ["Explore Ubatuba", "explore"],
   ["Regras", "regras"],
-  ["Ajuda", "contato"],
+  ["Localização", "como-chegar"],
+  ["Ao redor", "explore"],
 ] as const;
 
 export function GuideNavigation() {
