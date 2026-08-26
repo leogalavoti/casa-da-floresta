@@ -1,0 +1,80 @@
+export const propertyData = {
+  name: "Casa da Floresta",
+  location: "Ubatuba • São Paulo",
+  shortLocation: "Ubatuba • SP",
+  tagline: "Seu refúgio particular na Mata Atlântica",
+  intro:
+    "Bem-vindo. Preparamos este guia para que você encontre tudo o que precisa durante sua estadia.",
+  welcome:
+    "Esperamos que seus dias aqui sejam tranquilos, confortáveis e especiais. Neste guia você encontrará informações sobre a casa, sua estadia e algumas sugestões para aproveitar Ubatuba.",
+  description:
+    "A Casa da Floresta foi pensada para quem busca tranquilidade, privacidade e contato com a natureza em Ubatuba.",
+  guests: 2,
+  bedrooms: 1,
+  beds: 1,
+  bathrooms: 1,
+  wifi: {
+    network: "Disponível aos hóspedes",
+    password: "Disponível aos hóspedes",
+  },
+  checkIn: "Consultar reserva",
+  checkOut: "Consultar reserva",
+  parking: "Estacionamento disponível na propriedade.",
+  contactUrl: "#contato",
+  airbnbUrl: "#",
+  mapUrl: "#",
+  address: "Disponibilizado aos hóspedes após confirmação da reserva.",
+  images: {
+    hero: "/images/hero-botanical.png",
+    welcome: "/images/nature-finale.png",
+    hydro: "/images/hydro-deck.png",
+    finale: "/images/nature-finale.png",
+    logo: "/images/casa-logo.png",
+  },
+  gallery: [
+    { id: 1, src: "/images/hero-botanical.png", category: "Natureza", label: "Entre a floresta", shape: "tall" },
+    { id: 2, src: "/images/hydro-deck.png", category: "Hidromassagem", label: "Deck e hidromassagem", shape: "wide" },
+    { id: 3, src: "/images/nature-finale.png", category: "Área externa", label: "Natureza ao redor", shape: "square" },
+    { id: 4, src: "/images/hero-botanical.png", category: "Quarto", label: "Quarto — foto em breve", shape: "wide" },
+    { id: 5, src: "/images/nature-finale.png", category: "Cozinha", label: "Cozinha — foto em breve", shape: "tall" },
+    { id: 6, src: "/images/hydro-deck.png", category: "Deck", label: "Um convite para desacelerar", shape: "square" },
+  ],
+  amenities: ["Wi-Fi", "Cozinha", "Estacionamento", "Hidromassagem", "Área externa", "Contato com a natureza"],
+  instructions: [
+    { title: "Hidromassagem", text: "Instruções detalhadas fornecidas pelo anfitrião.", icon: "Waves" },
+    { title: "Cozinha", text: "Informações sobre equipamentos, utensílios e utilização.", icon: "CookingPot" },
+    { title: "Wi-Fi", text: "Rede e senha disponíveis para hóspedes.", icon: "Wifi" },
+    { title: "TV / entretenimento", text: "Instruções de utilização dos equipamentos disponíveis.", icon: "Tv" },
+    { title: "Lixo", text: "Orientações para descarte e localização adequada.", icon: "Trash2" },
+    { title: "Energia", text: "Informações importantes sobre equipamentos e utilização consciente.", icon: "Zap" },
+    { title: "Segurança", text: "Recomendações importantes para sua estadia.", icon: "ShieldCheck" },
+  ],
+  checkout: [
+    "Confira seus pertences",
+    "Desligue equipamentos",
+    "Organize o lixo conforme as orientações",
+    "Feche portas e janelas",
+    "Siga as instruções de entrega das chaves",
+  ],
+  rules: [
+    { title: "Respeite a natureza", text: "A propriedade está inserida em uma região cercada pela Mata Atlântica." },
+    { title: "Silêncio", text: "Evite ruídos excessivos, especialmente durante a noite." },
+    { title: "Visitantes", text: "Consulte o anfitrião antes de receber pessoas que não estejam incluídas na reserva." },
+    { title: "Pets", text: "Consulte as regras da sua reserva." },
+    { title: "Cuidados com a propriedade", text: "Utilize os ambientes e equipamentos com cuidado." },
+  ],
+  directions: [
+    "Aproximadamente 1,6 km da Praia Dura",
+    "Acesso pela região da Rodovia Rio-Santos",
+    "Ubatuba — SP",
+  ],
+  recommendations: [
+    { category: "Praias", title: "Praia Dura", text: "Uma das praias próximas à propriedade." },
+    { category: "Praias", title: "Praias de Ubatuba", text: "Explore diferentes opções durante sua estadia." },
+    { category: "Gastronomia", title: "Restaurantes recomendados", text: "Seleção pessoal do anfitrião." },
+    { category: "Mercado", title: "Mercados próximos", text: "Opções para compras durante sua estadia." },
+    { category: "Passeios", title: "O que fazer em Ubatuba", text: "Praias, trilhas, natureza e experiências locais." },
+  ],
+} as const;
+
+export type GalleryItem = (typeof propertyData.gallery)[number];
